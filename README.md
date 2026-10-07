@@ -50,13 +50,37 @@ Leaflet 交互式 HTML 地图（可缩放、可点击标记）
 | 🗺️ **交互式地图** | 8 个标记点、五类着色、自动图例、可缩放、点击弹窗 |
 | ⚡ **极简依赖** | Python 侧仅 `requests` 一个第三方库，其余为全部标准库 |
 
-### 1.3 交付级别
+### 1.3 功能演示视频
+
+> 🎬 **端到端演示（18 秒）**：[`lsa_C4D_output_screenshots/lsa_C4D_demo.mp4`](lsa_C4D_output_screenshots/lsa_C4D_demo.mp4)
+
+[![演示视频](lsa_C4D_output_screenshots/02_map_screenshot.png)](lsa_C4D_output_screenshots/lsa_C4D_demo.mp4)
+
+**视频内容依次展示**：
+
+1. **启动 Agent** — 终端运行 `python agent.py`，打印运行环境横幅
+   `模型：gemma4:e4b (Q4,K_M) @ http://localhost:11434`，证明推理全程在本地完成；
+2. **输入用户指令** — 下发 `给我生成一个 SIAS University 周边的地图，先搜索周边地点，再渲染成交互式地图。`，
+   Agent 自主发起 function call（搜索周边 → 查询坐标 → 渲染地图）；
+3. **模型推理产出** — 面板回显 `完成，共 8 个地点`，结构化地点 JSON 由本地模型生成（非手写）；
+4. **地图渲染结果** — 浏览器打开 `lsa_C4D_map.html`，显示 8 个彩色标记点、
+   右下角五类图例（校园设施 / 交通枢纽 / 文化景点 / 生活配套 / 自然风景），
+   标记点可点击查看详情、地图可缩放拖拽。
+
+> 📐 **规格**：1918×890 · 30 fps · 18.9 s · H.264 + AAC · 15.3 MB
+> ｜ 存放于 `lsa_C4D_output_screenshots/`，与其余运行证据同目录。
+>
+> 🎥 若需**自行重录**（例如想补齐更长的完整版），操作步骤、录屏工具设置、
+> 分镜时间分配与压缩/提交命令见 [`lsa_C4D_演示视频录制手册.md`](lsa_C4D_演示视频录制手册.md)。
+
+### 1.4 交付级别
 
 代码与产物齐备至 **Level 3**（函数调用 / 结构化输出 / 多步推理 / 记忆 / 技能包）。
 
-运行证据（推理运行截图 · tok/s · 演示录屏）因交付会话所处沙箱网络强限速未能采集，
-已提供**一键补全脚本**，本机 15 分钟可补齐；Level 4 的 Uncensored 部分为
-负责任的对比协议 + 一键脚本。详见 [§6 诚实声明](#6-诚实声明).
+运行证据（推理 tok/s · 模型输出日志 · Uncensored 对比）均已于本机实测采集，
+**Level 3 演示录屏**亦已录制完成（见 [§1.3](#13-功能演示视频)）；
+推理终端的完整截图仍待补全。Level 4 的 Uncensored 部分为
+负责任的对比协议 + 一键脚本。详见 [§6 真实运行证据](#6-真实运行证据本机实测).
 
 ---
 
@@ -64,6 +88,7 @@ Leaflet 交互式 HTML 地图（可缩放、可点击标记）
 
 | 你想看什么 | 去哪里看 |
 |---|---|
+| **看动态演示** | [`lsa_C4D_demo.mp4`](lsa_C4D_output_screenshots/lsa_C4D_demo.mp4)（18 秒：启动 → 指令 → 推理 → 地图渲染） |
 | 直接看效果 | 双击 `lsa_C4D_map.html`（8 个可点击标记 + 图例 + 可缩放） |
 | 自己跑一遍 | `lsa_C4D_教学说明.md`（8 步核对清单 + FAQ） |
 | 技术方案 | `lsa_C4D_方案设计.md`（架构图 + 选型依据） |
@@ -250,12 +275,16 @@ python agent.py                            # 重新运行即可
 > **「本地基线 vs 真实可得 abliterated 模型」的行为对照**，
 > 而非同一模型默认版/uncensored 版的严格对照。
 
-### 6.3 仍未采集项
+### 6.3 演示视频与仍未采集项
+
+**Level 3 演示录屏已录制交付**：`lsa_C4D_output_screenshots/lsa_C4D_demo.mp4`
+（18.9 秒 / 1918×890 / 30 fps / 15.3 MB），完整呈现「启动 Agent → 用户指令 →
+模型推理 → 地图渲染」。内容说明见 [§1.3](#13-功能演示视频)。
 
 | 缺口 | 状态 | 补全方式 |
 |---|---|---|
 | 推理运行截图（终端画面） | ⚠️ 数据已实测，截图待人工截取 | `lsa_C4D_待补全清单.md` §2.2 |
-| Level 3 演示录屏 | ❌ 未录制 | `lsa_C4D_待补全清单.md` §2.3 |
+| Level 3 演示录屏 | ✅ 已录制（`lsa_C4D_demo.mp4`） | 见 [§1.3](#13-功能演示视频) |
 
 **代码与产物已就绪、可直接运行**；缺口清单与补全步骤见
 `lsa_C4D_待补全清单.md`，失败分析见 `lsa_C4D_AAR.md`。
@@ -269,7 +298,7 @@ python agent.py                            # 重新运行即可
 | 1 | 姓名_C4D_方案设计.md | `lsa_C4D_方案设计.md` | ✅ 已交付 |
 | 2 | 姓名_C4D_agent-skill/ | `lsa_C4D_Agent技能/` | ✅ 已交付（含 6 个规范 Git 提交） |
 | 3 | 姓名_C4D_map.html | `lsa_C4D_map.html` | ✅ 已交付（8 标记点） |
-| 4 | 姓名_C4D_output_screenshots/ | `lsa_C4D_output_screenshots/` | ⚠️ 3 张已交付，推理截图待补全 |
+| 4 | 姓名_C4D_output_screenshots/ | `lsa_C4D_output_screenshots/` | ✅ 已交付（3 截图 + 3 证据 + **1 演示视频**，推理终端截图待补全） |
 | 5 | 姓名_C4D_验证报告.md | `lsa_C4D_验证报告.md` | ✅ 已交付 |
 | 6 | 姓名_C4D_教学说明.md | `lsa_C4D_教学说明.md` | ✅ 已交付 |
 | 7 | 姓名_C4D_AI日志.md（必须） | `lsa_C4D_AI日志.md` | ✅ 已交付（8 轮迭代） |
@@ -279,6 +308,7 @@ python agent.py                            # 重新运行即可
 | 11 | Level 2「模型输出日志」 | `lsa_C4D_模型输出日志.md` | ✅ 已交付（含真实模型输出） |
 | 12 | 运行证据补全 | `lsa_C4D_待补全清单.md` + `finalize_evidence.py` | ✅ 已交付 |
 | 13 | 演示视频录制指引 | `lsa_C4D_演示视频录制手册.md` | ✅ 已交付（含时间分配与 git 命令） |
+| 14 | Level 3 演示录屏 | `lsa_C4D_output_screenshots/lsa_C4D_demo.mp4` | ✅ 已交付（18.9 s / 15.3 MB） |
 
 ---
 

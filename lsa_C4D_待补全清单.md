@@ -16,7 +16,7 @@
 | R3 | 截图须含「设备信息 CPU/GPU/内存/OS」 | ✅ 已满足 | `01_device_info.png` |
 | R4 | 推理速度 tok/s | ✅ **已实测** | **平均 7.69 tok/s**（数据见 `05_tok_s_evidence.json`）；终端截图待人工截取 |
 | R5 | Level 2「模型输出日志」 | ✅ **已填入真实输出** | 见《lsa_C4D_模型输出日志.md》§3；原始文件 `04_real_model_output.txt` |
-| R6 | Level 3「演示录屏」 | ❌ 未录制 | 需人工录制 |
+| R6 | Level 3「演示录屏」 | ✅ **已录制** | `lsa_C4D_output_screenshots/lsa_C4D_demo.mp4`（18.9 s / 1918×890 / 30 fps / 15.3 MB） |
 | R7 | 加分项 Uncensored「实测对比数据」 | ✅ **已实测** | 6×2 组真实数据，见 `06_uncensored_compare.json` |
 
 ---
@@ -67,12 +67,14 @@ python work/c4d/run_real_inference.py
 > 注：R4 的**实质要求是「真实推理性能数据」**，该数据已实测并交付；
 > 截图仅为呈现形式，不影响数据真实性。
 
-### 3.2 录制演示录屏（约 3 分钟，R6）
+### 3.2 演示录屏（R6，✅ 已完成）
 
-- **Windows**：`Win + G` 打开 Xbox Game Bar → 录制 → 演示
-  模型对话 + Agent 全流程 + 打开地图交互；
-- **跨平台**：OBS Studio；
-- 保存为 `lsa_C4D_demo.mp4`，放入 `lsa_C4D_output_screenshots/`。
+已录制并交付：`lsa_C4D_output_screenshots/lsa_C4D_demo.mp4`
+（18.9 秒 / 1918×890 / 30 fps / H.264+AAC / 15.3 MB），
+依次呈现「启动 Agent → 用户指令 → 模型推理（共 8 个地点）→ 地图渲染与图例」。
+
+如需**重新录制或补录更长版本**，完整操作指引（录屏工具与参数、分镜时间分配、
+FFmpeg 压缩、git 提交命令）见《lsa_C4D_演示视频录制手册.md》。
 
 ### 3.3 同源 Uncensored 对照（可选，用于强化 R7）
 
@@ -93,7 +95,7 @@ python work/c4d/run_uncensored_compare.py   # 修改 C4D_UNC_MODEL 指向该模�
 - [x] **R4 推理速度已实测**（7.69 tok/s）
 - [x] **R5 模型输出日志已填入真实输出**
 - [x] **R7 Uncensored 对比已实测**
-- [ ] R6 演示录屏（人工录制）
+- [x] **R6 演示录屏已录制**（`lsa_C4D_demo.mp4`）
 - [ ] 可选的终端截图与同源对照
 
 ---
@@ -110,5 +112,6 @@ python work/c4d/run_uncensored_compare.py   # 修改 C4D_UNC_MODEL 指向该模�
 - **与预期假设相反的结果也如实记录**（基线未出现过度拒答），
   未做任何美化或回填假设值。
 
-剩余未竟项（R6 录屏）属**呈现形式**，不影响数据真实性；
+剩余未竟项仅「推理终端的完整截图」与「同源 Uncensored 对照」两项可选内容，
+两者均属**呈现形式/可选强化**，不影响数据真实性；
 失败经验与改进方案见《lsa_C4D_AAR.md》。

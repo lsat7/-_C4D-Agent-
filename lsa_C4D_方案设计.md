@@ -141,9 +141,9 @@ OpenStreetMap。
 | 姓名_C4D_AI日志.md（必须） | `lsa_C4D_AI日志.md` | ✅ 已交付（7 轮迭代） |
 | 姓名_C4D_拿来说明.md | `lsa_C4D_拿来说明.md` | ✅ 已交付 |
 | （挑战 json 要求）AAR | `lsa_C4D_AAR.md` | ✅ 已交付 |
-| （加分项）Uncensored 对比 | `lsa_C4D_uncensored对比报告.md` | ⚠️ 已交付协议+脚本；实测数据待本机补全 |
-| （Level 2 要求）模型输出日志 | `lsa_C4D_模型输出日志.md` | ⚠️ 已交付载体+Prompt；真实输出待本机运行回填 |
-| （Level 3 要求）演示录屏 | 待本机录制 `lsa_C4D_demo.mp4` | ❌ 待补全（见待补全清单 §2.3） |
+| （加分项）Uncensored 对比 | `lsa_C4D_uncensored对比报告.md` | ✅ 已交付（含 6×2 组实测数据） |
+| （Level 2 要求）模型输出日志 | `lsa_C4D_模型输出日志.md` | ✅ 已交付（含真实模型输出） |
+| （Level 3 要求）演示录屏 | `lsa_C4D_output_screenshots/lsa_C4D_demo.mp4` | ✅ 已交付（18.9 s / 15.3 MB） |
 
 ---
 

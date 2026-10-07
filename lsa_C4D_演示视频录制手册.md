@@ -469,16 +469,24 @@ curl -s -H "Authorization: Bearer $GH_PAT" \
 #    把上面打印的 download_url 粘进浏览器，应能内嵌播放（点击即可，无需下载）
 ```
 
-### 5.5 在 README 中挂上视频链接（可选，但建议做）
+### 5.5 在 README 中挂上视频链接（✅ 已落地）
 
-在 `README.md` 的「真实运行证据」章节末尾追加：
+> **本节建议已于 2026-10-07 实施**：README 的「1.3 功能演示视频」章节
+> 已按下列写法嵌入（使用链接 + 预览图组合，因 GitHub 会剥离 README 中的
+> `<video>` 标签，无法直接内嵌播放）：
 
 ```markdown
-**演示视频（端到端 100 秒）**：[`lsa_C4D_output_screenshots/lsa_C4D_demo.mp4`](lsa_C4D_output_screenshots/lsa_C4D_demo.mp4)
+> 🎬 **端到端演示（18 秒）**：[`lsa_C4D_output_screenshots/lsa_C4D_demo.mp4`](lsa_C4D_output_screenshots/lsa_C4D_demo.mp4)
+
+[![演示视频](lsa_C4D_output_screenshots/02_map_screenshot.png)](lsa_C4D_output_screenshots/lsa_C4D_demo.mp4)
 
 > 依次展示：启动 Agent（本地 `gemma4:e4b` / Q4_K_M）→ 输入触发 function calling 的指令
 > → 模型多步推理并生成结构化地点数据 → Leaflet 交互式地图渲染与交互。
 ```
+
+> ⚠️ **注意**：GitHub 的 README 渲染器会**过滤 `<video>` 标签**，
+> 因此 `README.md` 中**不要**使用 `<video src=...>` 写法（会被静默剔除、不显示）。
+> 正确做法是「**加粗链接 + 可点击预览图**」，观众点击后进入 GitHub 的视频播放页，可在线播放。
 
 ---
 
