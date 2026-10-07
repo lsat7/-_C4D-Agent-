@@ -1,0 +1,47 @@
+{
+  "env": {
+    "collected_at": "2026-10-07 16:12:22",
+    "device_hostname": "DESKTOP-MDK1N4L",
+    "os": "Windows 11 (Build 10.0.26300)",
+    "cpu": "Intel64 Family 6 Model 140 Stepping 1, GenuineIntel",
+    "python": "3.13.14",
+    "runtime": "llama-cpp-python (CPU backend)",
+    "model_file": "C:\\tmp\\ollama_dl\\model.blob",
+    "model_file_bytes": 5493439296,
+    "n_ctx": 4096,
+    "n_threads": 4,
+    "n_gpu_layers": 0
+  },
+  "runs": [
+    {
+      "label": "A_structured_json",
+      "prompt_tokens": 226,
+      "completion_tokens": 624,
+      "elapsed_sec": 85.411,
+      "prompt_tok_s": 2.65,
+      "gen_tok_s": 7.31,
+      "content": "[\n  {\n    \"name\": \"SIAS University\",\n    \"name_zh\": \"郑州西亚斯学院\",\n    \"latitude\": 34.4012,\n    \"longitude\": 113.7315,\n    \"description\": \"The main campus of SIAS University, located in Xinzheng, Zhengzhou.\"\n  },\n  {\n    \"name\": \"Xinzheng City Center\",\n    \"name_zh\": \"新郑市中心\",\n    \"latitude\": 34.4150,\n    \"longitude\": 113.7250,\n    \"description\": \"The central commercial and administrative area of Xinzheng City.\"\n  },\n  {\n    \"name\": \"Zhengzhou Railway Station\",\n    \"name_zh\": \"郑州火车站\",\n    \"latitude\": 34.7590,\n    \"longitude\": 113.6420,\n    \"description\": \"A major transportation hub in Zhengzhou, serving as a key regional link.\"\n  },\n  {\n    \"name\": \"Henan Provincial Museum\",\n    \"name_zh\": \"河南省博物馆\",\n    \"latitude\": 34.7610,\n    \"longitude\": 113.7100,\n    \"description\": \"A significant cultural site showcasing the history and heritage of Henan Province.\"\n  },\n  {\n    \"name\": \"Xinzheng Industrial Zone\",\n    \"name_zh\": \"新郑工业园区\",\n    \"latitude\": 34.3900,\n    \"longitude\": 113.7500,\n    \"description\": \"The primary industrial development area near the university.\"\n  },\n  {\n    \"name\": \"Local Market Area\",\n    \"name_zh\": \"本地集市区域\",\n    \"latitude\": 34.4050,\n    \"longitude\": 113.7380,\n    \"description\": \"A vibrant local market where students and residents shop for daily necessities.\"\n  },\n  {\n    \"name\": \"Jiaozuo Town\",\n    \"name_zh\": \"焦作镇\",\n    \"latitude\": 34.3800,\n    \"longitude\": 113.7150,\n    \"description\": \"A nearby town providing local community services and residential areas.\"\n  },\n  {\n    \"name\": \"Gongyuan Park\",\n    \"name_zh\": \"公园绿地\",\n    \"latitude\": 34.4000,\n    \"longitude\": 113.7350,\n    \"description\": \"A local park offering recreational space for the campus community.\"\n  }\n]"
+    },
+    {
+      "label": "B_tok_benchmark",
+      "prompt_tokens": 32,
+      "completion_tokens": 82,
+      "elapsed_sec": 10.507,
+      "prompt_tok_s": 3.05,
+      "gen_tok_s": 7.8,
+      "content": "I do not have specific, real-time, or localized geographical data for landmarks immediately surrounding SIAS University in Xinzheng, Zhengzhou.\n\nTo get an accurate list of 8 nearby landmarks, I recommend using a mapping service (like Google Maps or Baidu Maps) and searching for \"SIAS University, Xinzheng, Zhengzhou\" and then exploring the points of interest around that location."
+    },
+    {
+      "label": "C_chat",
+      "prompt_tokens": 24,
+      "completion_tokens": 94,
+      "elapsed_sec": 11.83,
+      "prompt_tok_s": 2.03,
+      "gen_tok_s": 7.95,
+      "content": "郑州西亚斯学院（SIAS University）是一所致力于国际化和实践教学的高等教育机构。它以其独特的教育理念和课程设置，融合了理论知识与行业实践，旨在培养具备国际视野和实战能力的复合型人才。学院在师资力量、硬件设施和学科建设等方面不断投入与发展，致力于成为连接中国与国际教育资源的重要桥梁，为学生提供一个全面、前沿的学习环境。"
+    }
+  ],
+  "notes": [],
+  "load_sec": 12.33,
+  "avg_gen_tok_s": 7.69
+}

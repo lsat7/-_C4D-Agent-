@@ -1,0 +1,58 @@
+[
+  {
+    "name": "SIAS University",
+    "name_zh": "郑州西亚斯学院",
+    "latitude": 34.4012,
+    "longitude": 113.7315,
+    "description": "The main campus of SIAS University, located in Xinzheng, Zhengzhou."
+  },
+  {
+    "name": "Xinzheng City Center",
+    "name_zh": "新郑市中心",
+    "latitude": 34.4150,
+    "longitude": 113.7250,
+    "description": "The central commercial and administrative area of Xinzheng City."
+  },
+  {
+    "name": "Zhengzhou Railway Station",
+    "name_zh": "郑州火车站",
+    "latitude": 34.7590,
+    "longitude": 113.6420,
+    "description": "A major transportation hub in Zhengzhou, serving as a key regional link."
+  },
+  {
+    "name": "Henan Provincial Museum",
+    "name_zh": "河南省博物馆",
+    "latitude": 34.7610,
+    "longitude": 113.7100,
+    "description": "A significant cultural site showcasing the history and heritage of Henan Province."
+  },
+  {
+    "name": "Xinzheng Industrial Zone",
+    "name_zh": "新郑工业园区",
+    "latitude": 34.3900,
+    "longitude": 113.7500,
+    "description": "The primary industrial development area near the university."
+  },
+  {
+    "name": "Local Market Area",
+    "name_zh": "本地集市区域",
+    "latitude": 34.4050,
+    "longitude": 113.7380,
+    "description": "A vibrant local market where students and residents shop for daily necessities."
+  },
+  {
+    "name": "Jiaozuo Town",
+    "name_zh": "焦作镇",
+    "latitude": 34.3800,
+    "longitude": 113.7150,
+    "description": "A nearby town providing local community services and residential areas."
+  },
+  {
+    "name": "Gongyuan Park",
+    "name_zh": "公园绿地",
+    "latitude": 34.4000,
+    "longitude": 113.7350,
+    "description": "A local park offering recreational space for the campus community."
+  }
+]

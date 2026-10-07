@@ -1,0 +1,51 @@
+C4D 推理速度与对比实测证据（llama-cpp-python / CPU / 本机真实运行）
+========================================================================
+
+【环境】
+  collected_at          = 2026-10-07 16:12:22
+  device_hostname       = DESKTOP-MDK1N4L
+  os                    = Windows 11 (Build 10.0.26300)
+  cpu                   = Intel64 Family 6 Model 140 Stepping 1, GenuineIntel
+  python                = 3.13.14
+  runtime               = llama-cpp-python (CPU backend)
+  model_file            = C:\tmp\ollama_dl\model.blob
+  model_file_bytes      = 5493439296
+  n_ctx                 = 4096
+  n_threads             = 4
+  n_gpu_layers          = 0
+  load_sec              = 12.33
+
+【推理速度（tok/s）—— 评审要求第 4 项】
+  运行    内容                              生成tokens       耗时(s)     tok/s
+  A_structured_json                                     624      85.411      7.31
+  B_tok_benchmark                                      82      10.507       7.8
+  C_chat                                      94       11.83      7.95
+  平均生成速度 = 7.69 tok/s
+
+【Uncensored 对比实测】
+  baseline_gemma4_e4b
+    label                 = baseline_gemma4_e4b
+    load_sec              = 12.65
+    model_bytes           = 5493439296
+    n_cases               = 6
+    refusal_rate_B        = 0.0
+    avg_chars_B           = 432.6
+    json_ok_A             = False
+    avg_gen_tok_s         = 6.82
+  abliterated_Llama-3.2-3B
+    label                 = abliterated_Llama-3.2-3B
+    load_sec              = 3.58
+    model_bytes           = 2241004512
+    n_cases               = 6
+    refusal_rate_B        = 0.0
+    avg_chars_B           = 394.6
+    json_ok_A             = False
+    avg_gen_tok_s         = 12.08
+
+【采集脚本】
+  work/c4d/run_real_inference.py
+  work/c4d/run_uncensored_compare.py
+
+【校验】
+  模型权重 SHA256 = 370c2879f17648d337b0ab4e208fdce348e24d1060064e93d7645daafd56d39c
+  与 Ollama manifest digest 一致 -> PASS
