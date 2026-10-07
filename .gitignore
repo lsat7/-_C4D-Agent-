@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+
+# 运行时生成（真实运行后才会出现，不入库）
+lsa_C4D_agent-skill/_model_raw_output.txt
+lsa_C4D_agent-skill/_model_locations.json
+lsa_C4D_agent-skill/_tool_call_log.json
+lsa_C4D_agent-skill/evidence_toks.txt
+lsa_C4D_agent-skill/memory.json
+lsa_C4D_output_screenshots/00_evidence_summary.txt
+
+# 系统
+.DS_Store
+Thumbs.db
