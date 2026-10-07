@@ -1,0 +1,66 @@
+[
+  {
+    "name": "SIAS University",
+    "name_zh": "郑州西亚斯学院",
+    "category": "campus",
+    "latitude": 34.4005,
+    "longitude": 113.7302,
+    "description": "Sias University（郑州西亚斯学院）是一所中外合作办学的应用型本科高校，位于河南省郑州市新郑市，校园环境优美、国际化特色鲜明。"
+  },
+  {
+    "name": "SIAS University Library",
+    "name_zh": "西亚斯图书馆",
+    "category": "campus",
+    "latitude": 34.4018,
+    "longitude": 113.7289,
+    "description": "校园核心地标之一，藏书丰富，是学生学习与自习的主要场所。"
+  },
+  {
+    "name": "SIAS University North Gate",
+    "name_zh": "西亚斯学院北门",
+    "category": "campus",
+    "latitude": 34.4035,
+    "longitude": 113.7310,
+    "description": "学校主要出入口，毗邻新郑市区主干道，交通便利。"
+  },
+  {
+    "name": "Xinzheng East Railway Station",
+    "name_zh": "新郑东站",
+    "category": "transport",
+    "latitude": 34.4120,
+    "longitude": 113.7560,
+    "description": "京广高铁沿线站点，距西亚斯学院约 3 公里，是师生城际出行的重要枢纽。"
+  },
+  {
+    "name": "Zhengzhou Xinzheng International Airport",
+    "name_zh": "郑州新郑国际机场",
+    "category": "transport",
+    "latitude": 34.5197,
+    "longitude": 113.8405,
+    "description": "郑州航空港经济综合实验区的核心枢纽，距西亚斯学院约 15 公里。"
+  },
+  {
+    "name": "Huangdi Guli (Yellow Emperor Hometown)",
+    "name_zh": "黄帝故里",
+    "category": "culture",
+    "latitude": 34.3990,
+    "longitude": 113.7480,
+    "description": "新郑是中华人文始祖黄帝的故里，黄帝故里景区是重要的文化圣地与旅游景点。"
+  },
+  {
+    "name": "Xinzheng City Center",
+    "name_zh": "新郑市中心",
+    "category": "living",
+    "latitude": 34.3950,
+    "longitude": 113.7400,
+    "description": "新郑市城区中心，商业、餐饮、生活配套集中，与西亚斯学院隔路相望。"
+  },
+  {
+    "name": "Juci Mountain Scenic Area",
+    "name_zh": "具茨山风景区",
+    "category": "scenic",
+    "latitude": 34.4200,
+    "longitude": 113.6600,
+    "description": "位于新郑市西南部的自然风景区，山清水秀，是周末踏青与登山的热门去处。"
+  }
+]
