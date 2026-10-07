@@ -133,7 +133,7 @@ OpenStreetMap。
 | 挑战要求 | 本提交对应文件 | 状态 |
 |---|---|---|
 | 姓名_C4D_方案设计.md | `lsa_C4D_方案设计.md`（本文） | ✅ 已交付 |
-| 姓名_C4D_agent-skill/ | `lsa_C4D_agent-skill/`（含 Git 仓库，6 个规范提交） | ✅ 已交付（代码可运行） |
+| 姓名_C4D_agent-skill/ | `lsa_C4D_Agent技能/`（含 Git 仓库，6 个规范提交） | ✅ 已交付（代码可运行） |
 | 姓名_C4D_map.html | `lsa_C4D_map.html`（8 个标记点，可缩放/点击） | ✅ 已交付 |
 | 姓名_C4D_output_screenshots/ | `lsa_C4D_output_screenshots/` | ⚠️ 已交付 3 张（设备/地图/代码）；**推理运行截图（tok/s）待本机补全** |
 | 姓名_C4D_验证报告.md | `lsa_C4D_验证报告.md` | ✅ 已交付（已验证/未竟项分明） |

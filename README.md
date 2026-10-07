@@ -114,12 +114,12 @@ ollama list               # 应看到 gemma4:e4b
 ollama show gemma4:e4b    # 核对 quantization 字段（Q4_K_M）
 
 # ③ 运行端到端流水线
-cd lsa_C4D_agent-skill
+cd lsa_C4D_Agent技能
 pip install -r requirements.txt   # 只有 requests 一个依赖
 python agent.py
 ```
 
-运行结束后在 `lsa_C4D_agent-skill/` 同目录得到 `lsa_C4D_map.html`，
+运行结束后在 `lsa_C4D_Agent技能/` 同目录得到 `lsa_C4D_map.html`，
 用浏览器打开即可查看交互式地图。
 
 ### 4.3 一键补全运行证据（推荐）
@@ -127,7 +127,7 @@ python agent.py
 若需要一次拿到「真实模型输出日志 + tok/s 证据 + 补全清单」，在本机执行：
 
 ```bash
-cd lsa_C4D_agent-skill
+cd lsa_C4D_Agent技能
 python ../finalize_evidence.py
 ```
 
@@ -170,10 +170,10 @@ python agent.py
 python agent.py
 
 # 重置记忆
-rm lsa_C4D_agent-skill/memory.json
+rm lsa_C4D_Agent技能/memory.json
 ```
 
-### 5.2 配置说明（`lsa_C4D_agent-skill/config.py`）
+### 5.2 配置说明（`lsa_C4D_Agent技能/config.py`）
 
 所有可调参数集中在 `config.py`，避免硬编码散落，换模型 / 换设备只改一处：
 
@@ -194,7 +194,7 @@ rm lsa_C4D_agent-skill/memory.json
 
 ```bash
 ollama pull gemma4:e2b                     # 或 26b / 31b（需更大内存）
-# 编辑 lsa_C4D_agent-skill/config.py → OLLAMA_MODEL = "gemma4:e2b"
+# 编辑 lsa_C4D_Agent技能/config.py → OLLAMA_MODEL = "gemma4:e2b"
 python agent.py                            # 重新运行即可
 ```
 
@@ -267,7 +267,7 @@ python agent.py                            # 重新运行即可
 | # | 挑战要求 | 本包文件 | 状态 |
 |---|---|---|---|
 | 1 | 姓名_C4D_方案设计.md | `lsa_C4D_方案设计.md` | ✅ 已交付 |
-| 2 | 姓名_C4D_agent-skill/ | `lsa_C4D_agent-skill/` | ✅ 已交付（含 6 个规范 Git 提交） |
+| 2 | 姓名_C4D_agent-skill/ | `lsa_C4D_Agent技能/` | ✅ 已交付（含 6 个规范 Git 提交） |
 | 3 | 姓名_C4D_map.html | `lsa_C4D_map.html` | ✅ 已交付（8 标记点） |
 | 4 | 姓名_C4D_output_screenshots/ | `lsa_C4D_output_screenshots/` | ⚠️ 3 张已交付，推理截图待补全 |
 | 5 | 姓名_C4D_验证报告.md | `lsa_C4D_验证报告.md` | ✅ 已交付 |
@@ -288,7 +288,7 @@ c4d/
 ├── README.md                        # 本文件
 ├── finalize_evidence.py             # 一键补全运行证据脚本（本机运行）
 ├── lsa_C4D_方案设计.md
-├── lsa_C4D_agent-skill/             # 技能代码（含 Git 仓库）
+├── lsa_C4D_Agent技能/             # 技能代码（含 Git 仓库）
 │   ├── SKILL.md
 │   ├── README.md
 │   ├── agent.py                     # Agent 主循环：多步推理 + 结构化输出
@@ -327,8 +327,8 @@ c4d/
 2. 遵守既有代码风格：配置集中到 `config.py`，不在业务代码硬编码模型名 / 路径；
 3. 提交前自检：
    ```bash
-   python -m py_compile lsa_C4D_agent-skill/*.py   # 语法校验
-   python lsa_C4D_agent-skill/agent.py             # 端到端跑通
+   python -m py_compile lsa_C4D_Agent技能/*.py   # 语法校验
+   python lsa_C4D_Agent技能/agent.py             # 端到端跑通
    ```
 4. 使用**语义化提交信息**（`feat:` / `fix:` / `docs:` / `chore:`）；
 5. 提交 Pull Request，说明改动动机、影响范围与验证方式。

@@ -13,7 +13,7 @@
    提炼出两套评分维度、8 项交付清单、3 个红旗项与 1 个加分项；
 2. **完成设备侦察与选型**：实测本机 i5-11300H / 16GB / Iris Xe（无独显）/
    Windows 11，对照 Gemma 4 家族表选定 **E4B + Q4_K_M**，运行时选 **Ollama v0.40.0**；
-3. **构建完整 Agent 技能包** `lsa_C4D_agent-skill/`：3 个工具（JSON Schema 注册）+
+3. **构建完整 Agent 技能包** `lsa_C4D_Agent技能/`：3 个工具（JSON Schema 注册）+
    function calling 多步循环 + 结构化 JSON 输出 + **跨会话记忆模块** +
    Leaflet 地图渲染器，共 5 个 Python 文件 496 行，**6 个规范 Git 提交**；
 4. **生成交互式地图** `lsa_C4D_map.html`：SIAS University 周边 8 个标记点，

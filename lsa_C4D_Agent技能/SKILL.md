@@ -21,7 +21,7 @@ Gemma 4 模型，通过**原生函数调用（function calling）**与**结构�
 ## 目录结构
 
 ```
-lsa_C4D_agent-skill/
+lsa_C4D_Agent技能/
 ├── SKILL.md            # 本文件：技能说明
 ├── agent.py            # Agent 主循环（function calling + 结构化输出 + 渲染）
 ├── tools.py            # 工具定义与 JSON Schema 注册表

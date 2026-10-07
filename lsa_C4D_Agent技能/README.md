@@ -1,4 +1,4 @@
-# lsa_C4D_agent-skill — 本地大模型 Agent 技能
+# lsa_C4D_Agent技能 — 本地大模型 Agent 技能
 
 > C4D 挑战：本地大模型 Agent 技能（Local LLM Agent Skills with Gemma 4）
 

@@ -96,7 +96,7 @@ curl http://localhost:11434/v1/chat/completions -H "Content-Type: application/js
 ### 4.1 安装依赖
 
 ```bash
-cd lsa_C4D_agent-skill
+cd lsa_C4D_Agent技能
 pip install -r requirements.txt     # 只有 requests 一个依赖
 ```
 
@@ -107,7 +107,7 @@ python agent.py
 ```
 
 > 💡 想一步到位（拉模型 + 跑 Agent + 采 tok/s + 出证据清单），用打包好的
-> 一键脚本：`python ../finalize_evidence.py`（从 `lsa_C4D_agent-skill` 目录运行），
+> 一键脚本：`python ../finalize_evidence.py`（从 `lsa_C4D_Agent技能` 目录运行），
 > 它会自动完成第四、五、七步并采集评审要求的推理速度证据。
 
 预期输出（节选）：

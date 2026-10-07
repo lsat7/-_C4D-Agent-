@@ -6,7 +6,7 @@
 
 用法（在本机、已联网、已装 Ollama 的 Windows/Linux/Mac 上）：
 
-    cd lsa_C4D_agent-skill
+    cd lsa_C4D_Agent技能
     pip install -r requirements.txt
     python ../finalize_evidence.py
 
@@ -27,7 +27,7 @@ import sys
 import time
 from datetime import datetime
 
-SKILL_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "lsa_C4D_agent-skill")
+SKILL_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "lsa_C4D_Agent技能")
 MODEL = "gemma4:e4b"
 EVIDENCE_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "lsa_C4D_output_screenshots")
 
