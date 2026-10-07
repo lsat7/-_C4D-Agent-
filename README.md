@@ -278,6 +278,7 @@ python agent.py                            # 重新运行即可
 | 10 | 加分项：Uncensored 对比 | `lsa_C4D_uncensored对比报告.md` | ✅ 已交付（含实测数据） |
 | 11 | Level 2「模型输出日志」 | `lsa_C4D_模型输出日志.md` | ✅ 已交付（含真实模型输出） |
 | 12 | 运行证据补全 | `lsa_C4D_待补全清单.md` + `finalize_evidence.py` | ✅ 已交付 |
+| 13 | 演示视频录制指引 | `lsa_C4D_演示视频录制手册.md` | ✅ 已交付（含时间分配与 git 命令） |
 
 ---
 
@@ -303,11 +304,16 @@ c4d/
 ├── lsa_C4D_output_screenshots/
 │   ├── 01_device_info.png
 │   ├── 02_map_screenshot.png
-│   └── 03_agent_skill_code.png
+│   ├── 03_agent_skill_code.png
+│   ├── 04_real_model_output.txt
+│   ├── 05_tok_s_evidence.json
+│   ├── 06_uncensored_compare.json
+│   └── lsa_C4D_demo.mp4             # 端到端演示视频（录制方法见录制手册）
 ├── lsa_C4D_验证报告.md
 ├── lsa_C4D_教学说明.md
 ├── lsa_C4D_模型输出日志.md
 ├── lsa_C4D_待补全清单.md
+├── lsa_C4D_演示视频录制手册.md       # 录屏工具/时间分配/压缩/提交流程
 ├── lsa_C4D_AI日志.md
 ├── lsa_C4D_拿来说明.md
 ├── lsa_C4D_AAR.md

@@ -6,12 +6,18 @@ __pycache__/
 venv/
 
 # 运行时生成（真实运行后才会出现，不入库）
-lsa_C4D_agent-skill/_model_raw_output.txt
-lsa_C4D_agent-skill/_model_locations.json
-lsa_C4D_agent-skill/_tool_call_log.json
-lsa_C4D_agent-skill/evidence_toks.txt
-lsa_C4D_agent-skill/memory.json
+lsa_C4D_Agent技能/_model_raw_output.txt
+lsa_C4D_Agent技能/_model_locations.json
+lsa_C4D_Agent技能/_tool_call_log.json
+lsa_C4D_Agent技能/evidence_toks.txt
+lsa_C4D_Agent技能/memory.json
 lsa_C4D_output_screenshots/00_evidence_summary.txt
+
+# 演示视频的中间产物 / 原始高码率母带（只保留压缩后的 lsa_C4D_demo.mp4）
+lsa_C4D_output_screenshots/*.mkv
+lsa_C4D_output_screenshots/*.mov
+lsa_C4D_output_screenshots/*_raw.mp4
+lsa_C4D_output_screenshots/*.flac
 
 # 系统
 .DS_Store
